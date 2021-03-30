@@ -1,0 +1,24 @@
+body{
+    background-color: burlywood;
+}
+
+.titulo{
+    font-size: x-large;
+    color: crimson;
+}
+
+.azul{
+    color: darkblue;
+}
+
+.verde{
+    color: darkgreen;
+}
+
+.vermelha{
+    color: red;
+}
+
+p{
+    color: rgb(0, 110, 255) !important; /*A classe titulo que é um paragrafo pegou essa formatação pois eu defini como importante
+}

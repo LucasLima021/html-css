@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(212, 231, 203);
+}
+
+#primeira{
+    background-color: rgb(248, 229, 53);
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    font-size: large;
+}
+
+#segunda{
+    background-color: royalblue;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    font-size: large;
+}
+
+#terceira{
+    background-color: seagreen;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    font-size: large;
+}
+
+#quarta{
+    background-color: tan;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    font-size: large;
+}
