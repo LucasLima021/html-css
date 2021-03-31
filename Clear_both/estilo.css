@@ -1,0 +1,25 @@
+#conteiner{
+    width: 800px;
+    margin: auto;
+}
+
+#caixa_texto1{
+    width: 200px;
+    border: 1px solid green;
+    padding: 10px;
+    clear: both;
+}
+
+#caixa_texto2{
+    width: 200px;
+    border: 1px solid green;
+    padding: 10px;
+    float: left;
+}
+
+#caixa_texto3{
+    width: 200px;
+    border: 1px solid green;
+    padding: 10px;
+    float: left;
+}

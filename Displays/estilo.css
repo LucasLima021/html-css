@@ -1,0 +1,27 @@
+.disp1{
+    display: inline;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    background-color: greenyellow;
+    font-size: x-large;
+}
+
+.disp2{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    padding: 5px;
+    background-color: indianred;
+    font-size: x-large;
+}
+
+.disp3{
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    background-color: lightseagreen;
+    font-size: x-large;
+}
+

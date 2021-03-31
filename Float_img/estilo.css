@@ -1,0 +1,27 @@
+#conteiner{
+    width: 600px;
+    border: 1px solid;
+    height: 730px;
+}
+
+.artigo{
+    width: 180px;
+    padding: 5px;
+    margin: 5px;
+    background-color: #d6d5d5;
+    float: left;
+}
+
+#limpa_float{
+    clear: both;
+}
+
+h1{
+    text-align: center;
+}
+
+.img{
+    padding: 5px;
+    margin-left: 10px;
+    float: left;
+}
