@@ -1,0 +1,37 @@
+#conteudo{
+    width: 800px;
+    margin: auto;
+}
+
+ul{
+   margin: auto;
+   padding: 0px;
+   list-style-type: none; 
+   background: #8eb4e3;
+   float: left;
+}
+
+h1{
+    text-align: center;
+}
+
+ul li{
+    float: left;
+}
+
+ul a{
+    width: 120px;
+    padding: 2.5em;
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    line-height: 2.5 em;
+    color: #ffffff;
+}
+
+a:hover{
+    color: #ffffff;
+    background: rgb(31, 71, 146);
+
+}
