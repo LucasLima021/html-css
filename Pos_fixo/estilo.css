@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(235, 221, 141);
+}
+
+#conteiner{
+    margin: auto;
+    width: 600px;
+    background-color: #ffffff;
+}
+
+p{
+    width: 250px;
+}
+
+.fixo{
+    border: 1px solid red;
+    position: fixed;
+    top: 100px;
+    left: 350px;
+}

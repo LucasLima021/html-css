@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(117, 224, 164);
+}
+
+#conteiner{
+    margin: auto;
+    width: 600px;
+    border: 1px solid red;
+    background-color: #ffffff;
+}
+
+p{
+    width: 250px;
+}
+
+.absoluto{
+    border: 1px solid red;
+    position: absolute;
+    top: 150px;
+    left: 300px;
+}
