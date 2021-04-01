@@ -1,0 +1,31 @@
+#primeira{
+    background-color: chartreuse;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    font-size: large;
+}
+
+#segunda{
+    background-color: darkcyan;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    font-size: large;
+}
+
+#terceira{
+    background-color: darkred;
+    width: 16.6em;
+    height: 30px;
+    text-align: center;
+    font-size: large;
+}
+
+#quarta{
+    background-color: darksalmon;
+    width: 53.5%;
+    height: 30px;
+    text-align: center;
+    font-size: large;
+}

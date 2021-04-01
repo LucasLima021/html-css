@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+<body>
+    
+    <h1>Formulário</h1>
+    <hr>
+
+    <form>
+
+        <h3>Cadastro</h3>
+        <label>Nome completo</label>
+        <input type="text" name="nome">
+        <br><br>
+
+        <label>Endereço</label>
+        <input type="text" name="endereço">
+        <br><br>
+
+        <label>Estado</label>
+        <select name="estados">
+            <option value="mg">Minas gerais</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="sp">São Paulo</option>
+        </select>
+        <br><br>
+
+        <label>Email</label>
+        <input type="text" name="email">
+        <br><br>
+
+        <label>Estado civil:</label>
+        <br>
+        <input type="radio" name="estcivil" value="c">Casado
+        <input type="radio" name="estcivil" value="s">Solteiro
+        <br><br>
+
+        <label>Area de interesse</label>
+        <br>
+        <input type="checkbox" name="interesse1" value="ch">Ciencias Humanas
+        <input type="checkbox" name="interesse2" value="cn">Ciencias Natureza
+        <input type="checkbox" name="interesse3" value="ce">Ciencias Exatas
+        <br><br>
+
+        <label>Observação</label>
+        <br>
+        <textarea></textarea>
+        <br><br>
+
+        <input type="button" value="Enviar">
+        <input type="button" value="Limpar">
+
+    </form>
+
+</body>
+</html>
