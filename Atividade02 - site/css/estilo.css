@@ -1,0 +1,132 @@
+*{
+    background-color: #F1F2ED;
+}
+
+img{
+    width: 100%;
+}
+
+#conteiner{
+    width: 1000px;
+    margin: auto;
+}
+
+#menu{
+    width: 1000px;
+    left: 500px;
+    margin: auto;
+}
+
+#promocao{
+    width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#titulo-central{
+    clear: both;
+    margin-top: 300px;
+    font-size: 2em;
+    text-align: center;
+    color: grey;
+}
+
+#recado{
+    width: 1000px;
+    margin: center;
+}
+
+#texto-recado{
+    width: 30%;
+    height: 200px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    padding: 50px;
+    margin-left: 160px;
+    margin-top: 130px;
+    text-align: right;
+    color: saddlebrown;
+    float: left;
+    border-bottom: 1px solid saddlebrown;
+}
+
+#foto-recado{
+    width: 40%;
+    height: 500px;
+    margin-top: 100px;
+    float: right;
+}
+
+#info {
+    width: 1000px;
+    margin: 0px auto;
+    margin-top: 500px;
+}
+
+#rodape {
+    width: 100%;
+    height: 200px;
+    background: brown;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    text-align: center;
+    line-height: 100px;
+    clear: both;
+}
+
+.promo {
+    width: 32%;
+    height: 200px;
+    float: left;
+    padding: 5px;
+}
+
+.coracao {
+    font-size: 2em;
+    color: brown;
+}
+
+.titulo{
+    font-size: 1.2em;
+}
+
+table{
+    width: 100%;
+}
+
+.tabela {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.bolinha {
+    font-size: 2em;
+    padding: 10px;
+    color: seagreen;
+}
+
+/*Navegação*/
+ul {
+    margin-top: 0px;
+    padding: 0px;
+    list-style: none;
+    float: left;
+} 
+
+ul li{
+    float: left;
+    font-size: 1.2em;
+}
+
+ul a{
+    display: block;
+    width: 120px;
+    padding: 0 2.5em;
+    line-height: 2.5em;
+    text-align: center;
+    color: #af7508;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #72088d;
+}
