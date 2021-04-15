@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>Javascript</title>
+</head>
+
+<body>
+    
+    <div class="container text-success bg-dark ps-3 fw-bold">
+
+        <h1 class="display-5 text-primary">Operadores de comparação</h1>
+        <hr>
+
+        <script>
+            let a = 10
+            let b = '10'
+            let c = 20
+            let d = 30
+            let e = 40
+            let f = 50
+            let g = 60
+            let h = '60'
+            let i = 70
+            let j = 70
+            let k = 80
+            let l = 80
+
+            document.write(`Valor de a = ${a} <br>`)
+            document.write(`Valor de b = ${b} <br>`)
+            document.write(`Valor de c = ${c} <br>`)
+            document.write(`Valor de d = ${d} <br>`)
+            document.write(`Valor de e = ${e} <br>`)
+            document.write(`Valor de f = ${f} <br>`)
+            document.write(`Valor de g = ${g} <br>`)
+            document.write(`Valor de h = ${h} <br>`)
+            document.write(`Valor de i = ${i} <br>`)
+            document.write(`Valor de j = ${j} <br>`)
+            document.write(`Valor de k = ${k} <br>`)
+            document.write(`Valor de l = ${l} <br>`)
+            document.write('<br>')
+
+            //Testando igualdade (mesmo valor)
+            if (a == b) {
+                document.write(`${a} é igual a ${b}`)
+            }
+            else {
+                document.write(`${a} não é igual a ${b}`)
+            }
+
+           
+            document.write('<br>')
+            //Idêntico (mesmo valor e mesmo tipo)
+            if (g === h) {
+                document.write(`${g} é idêntico a ${h}`)
+            }
+            else {
+                document.write(`${g}  não é idêntico a ${h}`)
+            }
+            
+            
+            document.write('<br>')
+             //Maior ou menor
+             if (d > c) {
+                 document.write(`${d} é maior que ${c}`)
+             }
+             else {
+                 document.write(`${d} é menor que ${c}`)
+             }
+
+            
+             document.write('<br>')
+            //Diferente de
+            if (e != f) {
+                document.write(`${e} é diferente de ${f}`)
+            }
+            else {
+                document.write(`${e} não é diferente de ${f}`)
+            }
+
+            
+            document.write('<br>')
+            //Não idêntico
+            if (i !== j) {
+                document.write(`${i} não é idêntico a ${j}`)
+            }
+            else {
+                document.write(`${i} é idêntico a ${j}`)  
+            }
+
+            
+            document.write('<br>')
+            //Maior igual e menor igual
+            if (k >= l) {
+                document.write(`${k} é maior ou igual a ${l}`)
+            }
+            else {
+                document.write(`${k} é menor ou igual a ${l}`)
+            }
+        </script>
+
+    </div>
+
+
+</body>
+
+</html>
