@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        .conteudo {
+            background-color: rgb(252, 240, 223);
+            text-align: center;
+        }
+
+        .linha {
+            border: 1px solid rgb(117, 117, 211);
+        }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <h1 class="display-1 p-3">Trabalhando com grid</h1>
+    <hr>
+
+    <div class="container">
+
+        <header>
+
+            <div class="linha conteudo">
+                <h1 class="display-5 text-center">Banner</h1>
+            </div>
+
+        </header>
+
+        <section class="p-3">
+
+            <div class="row linha">
+
+                <div class="col-md-6 col-xl-4 conteudo">
+                    <h1 class="display-5 p-2">Conteúdo 1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam error incidunt, nam sint porro
+                        quia reprehenderit facilis at. Odio, beatae debitis possimus in obcaecati sed nobis! Totam
+                        impedit quam soluta!</p>
+
+                    <button class="btn btn-warning m-2">Leia mais</button>
+
+                </div>
+
+                <div class="col-md-6 col-xl-4 conteudo">
+                    <h1 class="display-5 p-2">Conteúdo 2</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam error incidunt, nam sint porro
+                        quia reprehenderit facilis at. Odio, beatae debitis possimus in obcaecati sed nobis! Totam
+                        impedit quam soluta!</p>
+
+                    <button class="btn btn-warning m-2">Leia mais</button>
+
+                </div>
+
+                <div class="col-md-6 col-xl-4 conteudo">
+                    <h1 class="display-5 p-2">Conteúdo 3</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam error incidunt, nam sint porro
+                        quia reprehenderit facilis at. Odio, beatae debitis possimus in obcaecati sed nobis! Totam
+                        impedit quam soluta!</p>
+
+                    <button class="btn btn-warning m-2">Leia mais</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="linha conteudo">
+            <h1 class="display-5 text-center p-2">Rodapé</h1>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
