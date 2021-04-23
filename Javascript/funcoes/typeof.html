@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <h1>Operador typeof</h1>
+    <hr>
+
+    <script>
+        document.write(typeof 100)
+        document.write('<br>')
+        document.write(typeof 100.5)
+        document.write('<br>')
+        document.write(typeof 'frase')
+        document.write('<br>')
+        document.write(typeof 'a')
+        document.write('<br>')
+        document.write(typeof true)
+        document.write('<br>')
+        document.write(typeof undeclaredVariable)
+
+        //isNaN: É uma função que determina se um valor é um NaN ou não
+        let a = 'a'
+        let b = 1
+        document.write('<br>')
+        console.log(isNaN(a))
+        console.log(isNaN(b))
+
+        if (typeof b === 'string') {
+            document.write('É uma String')
+        } else {
+            document.write('Não é uma String')
+        }
+    </script>
+
+    
+</body>
+</html>
