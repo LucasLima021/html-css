@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+
+    <style>
+        #area{
+            font: normal 20pt arial;
+            background-color: rgb(46, 146, 46);
+            width: 200px; height: 200px;
+            text-align: center;
+            line-height: 200px;
+            color: white;
+        }
+
+        body{
+            font: normal 15pt arial;
+            background-color: aliceblue;
+        }
+
+        input{
+            font-size: 15px;
+        }
+
+        #resp{
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="area"> <!--Colocando eventos para serem disparados no HTML: onclick="clicar()" onmouseover="entrar()" onmouseout="sair()">!-->
+        Interaja...
+    </div>
+
+    <br><br>
+
+    <h1>Somando valores</h1>
+    <input type="number" name="" id="txtn1"> +
+    <input type="number" name="" id="txtn2">
+    <input type="button" value="Calcular" onclick="calcular()">
+
+    <div id="resp">
+        Resultado
+    </div>
+
+    <script>
+        let a = document.getElementById('area')
+        //Disparando eventos no JS
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou!'
+        }
+
+        function sair() {
+            a.innerText = 'Saiu!'
+        }
+
+        function calcular() {
+            let txtn1 = document.getElementById('txtn1')
+            let txtn2 = document.getElementById('txtn2')
+            let resp = document.getElementById('resp')
+
+            let n1 = Number(txtn1.value)
+            let n2 = Number(txtn2.value)
+
+            let soma = n1 + n2
+
+            resp.innerHTML = `${n1} + ${n2} = <strong>${soma}</strong>`
+        }
+
+    </script>
+
+</body>
+
+</html>

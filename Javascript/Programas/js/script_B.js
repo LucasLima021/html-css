@@ -1,28 +1,26 @@
-function verificar() {
-    var data = new Date()
-    var ano = data.getFullYear()
+function idade() {
+    let data = new Date()
+    let ano = data.getFullYear()
 
-    var formAno = document.getElementById('nasc')
+    let txtnasc = document.getElementById('nasc')
 
-    var resposta = document.querySelector('div#resposta')
-
-    if (formAno.value.length == 0 || formAno.value >= ano) { //if para fazer a validação
-        alert('Dados inválidos')
+    if (txtnasc.value.length == 0 || txtnasc.value >= ano) {
+        alert('[ERRO] Campo de nascimento vazio ou o ano informado é maior ou igual o ano atual')
     }
-    else { //else para abraçar todas as minhas condicionais, ou seja, passou pelo primeiro if
-        var genero = ""
-        var formSexo = document.getElementsByName('sexo')
-        var idade = ano - formAno.value
-        var imagem = document.createElement('img')
-        imagem.setAttribute('id', 'foto')
-        
-        if (formSexo[0].checked) { //verificando se é HOMEM
-            genero = 'HOMEM'
+    else {
+        let sexo = document.getElementsByName('sexo')
+        let result = document.getElementById('resposta')
+        let idade = ano - txtnasc.value
+        let imagem = document.createElement('img')
+        imagem.setAttribute('id', 'imagem')
 
-            if (idade <= 10) { //Verificando as idades p/ homem
+        if (sexo[0].checked) {
+            result.innerHTML = `Detectamos HOMEM com ${idade} anos`
+
+            if (idade <= 10) {
                 imagem.setAttribute('src', 'img/foto-bebe-m.png')
             }
-            else if (idade <= 20) {
+            else if (idade <= 22) {
                 imagem.setAttribute('src', 'img/foto-jovem-m.png')
             }
             else if (idade < 60) {
@@ -31,15 +29,15 @@ function verificar() {
             else {
                 imagem.setAttribute('src', 'img/foto-idoso-m.png')
             }
-        } //fecha chave do if p/ verificar se é homem
+        }
 
-        else if (formSexo[1].checked) { //Verificando se é MULHER
-            genero = 'MULHER'
+        else if (sexo[1].checked) {
+            result.innerHTML = `Detectamos MULHER com ${idade} anos`
 
-            if (idade <= 10) { //Verificando as idades p/ mulher
+            if (idade <= 10) {
                 imagem.setAttribute('src', 'img/foto-bebe-f.png')
             }
-            else if (idade <= 20) {
+            else if (idade <= 22) {
                 imagem.setAttribute('src', 'img/foto-jovem-f.png')
             }
             else if (idade < 60) {
@@ -47,13 +45,9 @@ function verificar() {
             }
             else {
                 imagem.setAttribute('src', 'img/foto-idoso-f.png')
-            }           
-        }  //fecha chave do else if p/ verificar se é mulher
-    
-        resposta.innerHTML = `Detectamos ${genero} com ${idade} anos`
-        resposta.appendChild(imagem)
-        resposta.style.textAlign = "center"
+            }
+        }
 
-    } //fecha chave do primeiro else
-    
-} //fecha chave da função
+        result.appendChild(imagem)
+    }
+}

@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(70, 142, 236);
+    font: normal 20pt arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+section{
+    background-color: white;
+    width: 500px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.377); /*O primeiro valor do box-shadow é a sombra na ateral direita, o segundo valor é a sombra na parte inferior e o terceiro valor é o espalhamento da sombra(espessura) de forma geral*/
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

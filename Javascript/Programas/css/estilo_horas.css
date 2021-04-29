@@ -29,10 +29,10 @@ body {
     padding: 10px;
 }
 
- #resposta {
-    text-align: center;
-}
-
 img {
     margin-top: 10px;
+}
+
+div{
+    text-align: center;
 }
