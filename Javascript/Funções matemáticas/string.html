@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    
+    <div class="container">
+
+        <h1 class="display-5 p-2">Trabalhando com Strings</h1>
+        <hr>
+
+        <script>
+
+            document.write('<h1>Tamanho de String</h1>')
+
+            let texto1 = 'Olá Mundo!'
+
+            quantidade_caracter = texto1.length
+            
+            document.write(`A frase ${texto1} tem ${quantidade_caracter} caracteres`)
+            document.write('<hr>')
+
+            document.write('<h1>Posição de Caracteres</h1>')
+
+            let texto2 = 'Olá Mundo!'
+            
+            posicao = texto2.charAt(2)
+            document.write(`Encontramos o "${posicao}"!`)
+            document.write('<hr>')
+
+            //Encontrando a 1ª ocorrencia de um caractere
+            document.write('<h1>Ocorrência de caracteres</h1>')
+
+            let texto3 = 'Olá Mundo!'
+            valor = texto3.indexOf('M')
+
+            document.write(`O "M" está na posição ${valor}`)
+            document.write('<hr>')
+
+            document.write('<h1>Substituindo Strings </h1>')
+            
+            let texto4 = 'Olá mundo!'
+            textoNovo4 = texto4.replace('Olá mundo!', 'Lucas Lima')
+
+            document.write(`Texto novo é ${textoNovo4}`)
+            document.write('<hr>')
+
+            document.write('<h1>Extraindo partes de uma Strings </h1>')
+            
+            let texto5 = 'Olá mundo!'
+            texto5Pedaco = texto5.substr(0, 7)
+
+            document.write(`Pedaços de Olá mundo! : ${texto5Pedaco}`)
+            document.write('<hr>')
+
+            document.write('<h1>Convertendo para MAIÚSCULAS</h1>')
+            
+            let texto6 = 'Olá mundo!'
+            texto6Upercase = texto6.toUpperCase()
+
+            document.write(`"Olá Mundo!" em maiúsculo é ${texto6Upercase}`)
+            document.write('<hr>')
+
+            document.write('<h1>Convertendo para minúsculas</h1>')
+            
+            let texto7 = 'OLÁ MUNDO!'
+            texto7Lower = texto7.toLowerCase()
+
+            document.write(`"Olá Mundo!" em minúsculo é ${texto7Lower}`)
+            document.write('<hr>')
+
+            //***********IMPORTANTE*********************************************
+            //Retirar espaços antes e depois do texto: trim()
+            document.write('<h1 class="text-primary">Limpando espaços de Strings</h1>')
+			
+            let texto8 = '    Olá Mundo!     ' //Vai aparecer normal no browser
+            document.write(texto8 + '<br>')
+
+            contarTexto8 = texto8.length
+
+            document.write(` "Olá mundo!" do texto8 tem ${contarTexto8} caracteres<br>`)
+
+            texto8Trim = texto8.trim()
+            contarTexto8Trim = texto8Trim.length //Tamanho string
+
+            document.write(`"Olá mundo!" do texto8 tem agora ${contarTexto8Trim} caracteres<br>`)
+			document.write('<hr>')
+
+        </script>
+
+    </div>
+   
+    
+    
+    
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+   
+  </body>
+</html>
