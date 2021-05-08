@@ -28,8 +28,8 @@
 
         <div class="container">
             <h1>Operando valores</h1>
-            <input type="number" name="" id="txtn1"> 
-            <input type="number" name="" id="txtn2">
+            <input type="number" name="" id="txtn1" placeholder="Digite um número"> 
+            <input type="number" name="" id="txtn2" placeholder="Digite outro número">
             <br><br>
             <div id="resp" class="display-6">
                 Resultado
@@ -39,6 +39,7 @@
             <input class="btn btn-success mt-3" type="button" value="Subtrair" onclick="subtrair()">
             <input class="btn btn-danger mt-3" type="button" value="Multiplicar" onclick="multiplicar()">
             <input class="btn btn-info mt-3" type="button" value="Dividir" onclick="dividir()">
+            <input class="btn btn-dark mt-3" type="button" name="" id="" value="Limpar" onclick="limpar()">
         </div>
 
         <script>
@@ -93,6 +94,13 @@
                 let div = n1 / n2
 
                 resp.innerHTML = `<h2>${n1} / ${n2} = <strong>${div}</strong></h2`
+            }
+
+            function limpar() {
+                document.getElementById('txtn1').value = ""
+                document.getElementById('txtn2').value = ""
+                let resp = document.getElementById('resp')
+                resp.innerHTML = ""
             }
 
         </script>
