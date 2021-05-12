@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <title>JS</title>
+  </head>
+  <body>
+    
+    <div class="container">
+
+        <h1 class=" display-6 text-primary">Trabalhando com Arrays: Método ordenar</h1>
+        <hr>
+
+        <script>
+
+            let listaCompras = Array()
+
+            listaCompras[0] = 'Arroz'
+            listaCompras[1] = 'Feijão'
+            listaCompras[2] = 'Café'
+            listaCompras[3] = 'Pão'
+
+            console.log(listaCompras)
+
+            //colocando em ordem
+            listaCompras.sort()
+            console.log(listaCompras)
+
+            //array numérico
+            let listaNumeros = Array()
+
+            listaNumeros[0] = 4
+            listaNumeros[1] = 10
+            listaNumeros[2] = 5
+            listaNumeros[3] = 1
+
+            console.log(listaNumeros)
+
+            //ordenar
+            listaNumeros.sort(ordenar)
+            console.log(listaNumeros)
+
+            //função essencial para colocar em ordem um vetor numérico
+            function ordenar(a, b) {
+                return a - b
+            }
+
+            document.write(`Lista de compras: ${listaCompras} <hr>`)
+            document.write(`Lista numérica: ${listaNumeros}`)
+
+        </script>
+
+    </div>
+
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>
