@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <title>JS</title>
+  </head>
+  <body>
+
+    <div class="container">
+
+        <h1 class="text-secondary m-4">Estrutura de controle</h1>
+        <h3 class="text-success m-4">Laço while... break</h3>
+        <hr>
+
+        <script>
+
+            let a = 0
+
+            //while com break
+            while (a <= 15) {
+                document.write(`Valor de a: ${a}<br>`)
+
+                if (a === 10) {
+                    break //instrução interrompida
+                }
+
+                a++
+            }
+            document.write(`<hr>`)
+            
+            //while com continue
+            let b = 0
+
+            while (b <= 15) {
+                b++
+
+                if (b === 8) {
+                    document.write(`<p class="text-success">Este número está fora da lista</p>`)
+                    continue //instrução interrompida
+                }
+                document.write(`<br>Valor de b: ${b}`)
+            }
+
+            document.write(`<br>Fim do programa`)
+
+        </script>
+
+    </div>
+
+
+    
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>
