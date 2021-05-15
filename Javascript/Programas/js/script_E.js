@@ -1,6 +1,6 @@
 let num = document.getElementById('entrada')
+let resp = document.getElementById('result')
 let lista = document.getElementById('lista')
-let resp = document.querySelector('div#result')
 
 let valores = []
 
@@ -23,17 +23,16 @@ function inLista(n, v) {
 }
 
 function adicionar() {
-    
     if (isNumero(num.value) && inLista(num.value, valores)) {
-       valores.push(Number(num.value))
+        valores.push(Number(num.value))
 
-       let item = document.createElement('option')
-       item.text = `Valor ${num.value} adicionado`
-       lista.appendChild(item)
-       resp.innerHTML = ''
+        let item = document.createElement('option')
+        item.text = `Valor ${num.value} adicionado`
+        lista.appendChild(item)
+        resp.innerHTML = ''
     }
     else {
-        alert('O número digitado está fora do intervalo permitido ou já consta na lista')
+        alert('Valor inválido ou o número digitado já consta na lista')
     }
 
     num.value = ''
@@ -42,8 +41,9 @@ function adicionar() {
 
 function resultado() {
     resp.innerHTML = ''
+
     if (valores.length == 0) {
-        alert('Você não adicionou nenhum número')
+        alert('Adicione algum valor')
     }
     else {
         let tot = valores.length
@@ -63,12 +63,12 @@ function resultado() {
             }
         }
         media = soma / tot
-        
-        //saídas
+
+        //saída
         resp.innerHTML = `<br>Ao todo temos ${tot} números cadastrados`
-        resp.innerHTML += `<br>O maior número digitado foi ${maior}`
-        resp.innerHTML += `<br>O menor número digitado foi ${menor}`
-        resp.innerHTML += `<br>A soma dos números cadastrados é igual a ${soma}`
-        resp.innerHTML += `<br>A média dos valores é ${media.toFixed(2)}`
+        resp.innerHTML += `<br>O maior número cadastrado foi o ${maior}`
+        resp.innerHTML += `<br>O menor número cadastrado foi o ${menor}`
+        resp.innerHTML += `<br>A soma dos números cadastrados é de ${soma}`
+        resp.innerHTML += `<br>A média é de ${media.toFixed(2).replace('.', ',')}`
     }
 }
