@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p {
+            /*artifício para deixar a largura do parágrafo com o tamanho do texto correspondente, e não 100%*/
+            width: max-content;
+        }
+    </style>
+
+    <!--script interno-->
+    <script>
+
+        function entrou(elemento) {
+            elemento.innerHTML = "Você entrou com o mouse"
+        }
+
+        function saiu(elemento) {
+            elemento.innerHTML = "Passe o mouse aqui"
+        }
+
+        function capturar(elemento) {
+            console.log(elemento.value)
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Eventos com o mouse</h1>
+
+    <p onmouseover="entrou(this)" onmouseout="saiu(this)">Passe o mouse aqui</p>
+    <p onmouseover="entrou(this)" onmouseout="saiu(this)">Passe o mouse aqui</p>
+
+    <!--Não é necessário colocar id, e sim argumentos this, que referenciam aquele texto do elemento-->
+
+    <select onchange="capturar(this)">
+        <option value="10">Valor 10</option>
+        <option value="20">Valor 20</option>
+        <option value="30">Valor 30</option>
+        <option value="40">Valor 40</option>
+        <option value="50">Valor 50</option>
+    </select>
+
+</body>
+
+</html>
